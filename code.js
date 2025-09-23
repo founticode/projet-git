@@ -352,21 +352,30 @@ function linnnee(roop) {
      while (xo <= roop) {
      let lino = "" ;
      let s = 1;
-     //let ro = 4;
      while (s <= xo) { 
         lino = lino + "*";
         s++;
-        
-    } 
-    console.log(lino);
+    }
+    console.log(lino)
     xo++;
-} 
-   
- } 
- linnnee(8);
+    } 
+    //xo = roop - 1;
+    while (xo >= 1) {
+    let lino = "";
+    let s = 1;
+    while (s <= xo) {
+        lino = lino + "*";
+        s++;
+    }
+    console.log(lino);
+    xo--;
+}
+
+}
+ linnnee(4);
 
 
- function linnne(roopp) {
+ /*function linnne(roopp) {
     let go = 1;
     while (go <= roopp) {
     let linoo = "" ;
@@ -381,7 +390,7 @@ function linnnee(roop) {
 } 
   
 } 
-linnne(4);
+linnne(4);*/
 
     
 
