@@ -352,18 +352,27 @@ function linnnee(roop) {
      while (xo <= roop) {
      let lino = "" ;
      let s = 1;
-     //let ro = 4;
      while (s <= xo) { 
         lino = lino + "*";
         s++;
-        
-    } 
-    console.log(lino);
+    }
+    console.log(lino)
     xo++;
-} 
-   
- } 
- linnnee(8);
+    } 
+    xo = roop - 1;
+    while (xo >= 1) {
+    let lino = "";
+    let s = 1;
+    while (s <= xo) {
+        lino = lino + "*";
+        s++;
+    }
+    console.log(lino);
+    xo--;
+}
+
+}
+ linnnee(4);
 
 
  function linnne(roopp) {
@@ -383,5 +392,61 @@ function linnnee(roop) {
 } 
 linnne(4);
 
-    
+
+function diamond1(zise) {
+    let v = 1;
+    while (v <= zise) {
+        let leni = "";
+
+        let space = 1;
+        while (space <= zise - v) {
+            leni = leni + " ";
+            space++;
+        }
+        console.log(leni);
+        v++;    
+    }
+}
+diamond1(4);
+
+
+function diamond2(sozo) {
+    let m = 1;
+    while (m <= sozo) {
+        let lono = "";
+
+        let star = 1;
+        while (star <= 2 * m - 1) {
+            lono = lono + "*";
+            star++;
+        }
+        console.log(lono);
+        m++;
+    }
+}
+diamond2(4);
+
+
+function diamond3(soso) {
+    let q = 1;
+    while (q <= soso) {
+        let nile = "";
+
+        let spade = 1;
+        while (spade <= soso - q) {
+            nile = nile + " ";
+            spade++;
+        }
+
+        let stak = 1;
+        while (stak <= 2 * q - 1) {
+            nile = nile + "*";
+            stak++
+        }
+        console.log(nile);
+        q++;
+    }
+}
+diamond3(4);
+
 
